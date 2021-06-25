@@ -13,7 +13,6 @@ export const MultipleCustomHooks = () => {
      */
     const { author, quote } = !!data && data[0];
 
-
     return (
         <div>
             <h1>Breaking bad quotes - useFetch</h1>

@@ -29,10 +29,10 @@ export const useFetch = (url) => {
 
             if (isMounted.current) {
                 setState({ data: data, loading: false, error: null });
-            } else {
-                console.log('No se llamó');
             }
 
+        }).catch(() => {
+            setState({ data: null, loading: false, error: 'Algo falló' });
         });
         
     }, [url]);
