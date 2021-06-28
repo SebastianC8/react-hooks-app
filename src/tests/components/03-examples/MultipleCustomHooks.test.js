@@ -33,6 +33,7 @@ describe('Prueba MultipleCustomHook', () => {
         const wrapper = shallow(<MultipleCustomHooks/>);
         expect(wrapper.find('.alert').exists()).toBe(false);
         expect(wrapper.find('.mb-0').text().trim()).toBe('Hola mundo');
+        expect(wrapper.find('footer').text().trim()).toBe('sebastián c.');
     });
 
 });
