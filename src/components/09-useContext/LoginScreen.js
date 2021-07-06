@@ -5,7 +5,7 @@ export const LoginScreen = () => {
 
     const { setUser } = useContext(UserContext);
 
-    const formatArray = {
+    const formatObject = {
         id : 987,
         name: 'Anonymous'
     };
@@ -14,7 +14,7 @@ export const LoginScreen = () => {
         <div>
             <h1>LoginScreen</h1>
             <hr/>
-            <button className="btn btn-primary" onClick = { () => setUser(formatArray) }>Asignar</button>
+            <button className="btn btn-primary" onClick = { () => setUser(formatObject) }>Asignar</button>
         </div>
     )
 }

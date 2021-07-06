@@ -9,7 +9,7 @@ export const TodoAdd = ({ handleAddTodo }) => {
         
         e.preventDefault();
 
-        if (description) {
+        if (description.length >= 1) {
 
             const newTodo = { id: new Date().getTime(), desc: description, done: false }
             handleAddTodo(newTodo);
